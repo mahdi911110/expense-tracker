@@ -127,7 +127,13 @@ expense-tracker/
 │   ├── save.svg
 │   ├── delete.svg
 │   ├── chart-pie-2.svg
-|   └── expense-report.svg
+│   └── expense-report.svg
+│
+├── screenshots/
+│   ├── home-en.png
+│   ├── chart-en.png
+│   ├── home-fa.png
+│   └── chart-fa.png
 │
 ├── src/
 │   ├── components/
@@ -328,21 +334,21 @@ Lunch at restaurant
 
 Add screenshots of the project here:
 
-```markdown
-## 📸 Screenshots
-
 ### 🇬🇧 English Version
 
 ![English Home Page](screenshots/home-en.png)
+
+### 📊 Expense Chart English Version
+
+![English Chart Modal](screenshots/chart-en.png)
 
 ### 🇮🇷 Persian Version
 
 ![Persian Home Page](screenshots/home-fa.png)
 
-### 📊 Expense Chart
+### 📊 Expense Chart Persian Version
 
-![Expense Chart](screenshots/chart.png)
-```
+![Persian Chart Modal](screenshots/chart-fa.png)
 
 ---
 
@@ -389,7 +395,7 @@ See the `LICENSE` file for more information.
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Mahdi Gorbany**
 
 GitHub: `@mahdi911110`
 
