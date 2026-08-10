@@ -1,4 +1,13 @@
-# 💰 Expense Tracker
+<h1 align="center">💰 Expense Tracker</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
+  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white">
+  <img src="https://img.shields.io/badge/status-completed-success?style=for-the-badge">
+</p>
 
 A modern and responsive expense tracking application built with **React**.
 
@@ -331,8 +340,6 @@ Lunch at restaurant
 ---
 
 ## 📸 Screenshots
-
-Add screenshots of the project here:
 
 ### 🇬🇧 English Version
 
