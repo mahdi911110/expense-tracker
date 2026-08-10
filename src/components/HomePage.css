@@ -1,0 +1,229 @@
+.header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 10px 20px 10px;
+  background-color: white;
+}
+.left-section {
+  display: flex;
+  aspect-ratio: 1/1;
+}
+.home-link {
+  width: 100%;
+}
+.money-wallet {
+  display: flex;
+}
+.middle-section {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.search-input {
+  border: 1px solid rgb(92, 92, 92);
+  border-radius: 5px;
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+}
+.right-section {
+  display: flex;
+  gap: 5px;
+}
+.btn-language {
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.btn-language:hover {
+  opacity: 0.7;
+}
+.btn-language:active {
+  opacity: 0.5;
+}
+.btn-chart {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(232, 232, 232);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.btn-chart:hover {
+  opacity: 0.7;
+}
+.btn-chart:active {
+  opacity: 0.5;
+}
+.img-chart-pie {
+  width: 25px;
+}
+/* ------------------------------ */
+.inputs {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  gap: 5px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding-top: 70px;
+  justify-content: center;
+}
+.input-text,
+.input-price,
+.input-date,
+.input-keyword {
+  display: flex;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0 5px 0 10px;
+  border: 1px solid rgb(92, 92, 92);
+  border-radius: 5px;
+  flex: 1;
+}
+.btn-add {
+  background-color: rgb(105, 200, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.btn-add:hover {
+  opacity: 0.7;
+}
+.btn-add:active {
+  opacity: 0.5;
+}
+/* ------------------------ */
+.total-expense-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: cadetblue;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* ------------------------ */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(227, 226, 226);
+  padding: 10px 20px;
+  border-radius: 15px;
+  justify-content: center;
+  width: 100%;
+}
+.expense-list-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.expense-list-header-list-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.expense-list-header-detail {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  background-color: rgb(200, 200, 200);
+  padding: 10px 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+.expense-list-header-title,
+.expense-list-header-price,
+.expense-list-header-date,
+.expense-list-header-keyword {
+  flex: 1;
+}
+.expense-list-header-action {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.not-found-text {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: purple;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* -------------------------- */
+.expense-list-header-title-fa,
+.expense-list-header-price-fa,
+.expense-list-header-date-fa,
+.expense-list-header-keyword-fa {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+.expense-list-header-action-fa {
+  display: flex;
+  flex: 1;
+  justify-content: start;
+}
+/* --------------------------------- */
+.chart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.chart {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.chart-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.chart-header-text {
+  font-size: 24px;
+  margin: 0;
+}
+.btn-close {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 40px;
+  background-color: rgb(105, 200, 255);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,124 @@
+.expense-item {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  background-color: rgb(200, 200, 200);
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.input-change-title,
+.input-change-price,
+.input-change-date,
+.input-change-keyword {
+  min-width: 0px;
+  max-width: 100%;
+  flex: 1;
+}
+.expense-title,
+.expense-date {
+  min-width: 0px;
+  max-width: 100%;
+  flex: 1;
+}
+.expense-amount {
+  min-width: 0px;
+  max-width: 100%;
+  color: red;
+  flex: 1;
+}
+.expense-keyword {
+  min-width: 0px;
+  max-width: 100%;
+  color: gray;
+  flex: 1;
+  display: flex;
+}
+.expense-actions {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  flex: 1;
+}
+.btn-edit {
+  background-color: rgb(115, 244, 244);
+  border: none;
+  border-radius: 5px;
+  padding: 3px 4px;
+  align-self: start;
+  cursor: pointer;
+}
+.btn-edit:hover {
+  opacity: 0.7;
+}
+.btn-edit:active {
+  opacity: 0.5;
+}
+.img-edit {
+  width: 25px;
+}
+.btn-save {
+  background-color: rgb(115, 244, 244);
+  border: none;
+  border-radius: 5px;
+  padding: 3px 4px;
+  align-self: start;
+  cursor: pointer;
+}
+.btn-save:hover {
+  opacity: 0.7;
+}
+.btn-save:active {
+  opacity: 0.5;
+}
+.img-save {
+  width: 25px;
+}
+.btn-delete {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 4px;
+  align-self: start;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  opacity: 0.7;
+}
+.btn-delete:active {
+  opacity: 0.5;
+}
+.img-delete {
+  width: 25px;
+}
+/* ------------------------- */
+.expense-title-fa,
+.expense-date-fa {
+  min-width: 0px;
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.expense-amount-fa {
+  min-width: 0px;
+  max-width: 100%;
+  color: red;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.expense-keyword-fa {
+  min-width: 0px;
+  max-width: 100%;
+  color: gray;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.expense-actions-fa {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  flex: 1;
+}
