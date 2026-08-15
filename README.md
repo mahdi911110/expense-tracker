@@ -204,8 +204,15 @@ expense-tracker/
 │   └── index.css
 │
 ├── .gitignore
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package-lock.json
 ├── package.json
-└── README.md
+├── README.md
+├── setupTest.js
+├── vite.config.js
+└── vitest.config.js
 ```
 
 ---
