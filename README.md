@@ -91,6 +91,46 @@ It also supports **English and Persian languages** with full **LTR/RTL layout su
 * **Recharts** – Pie chart visualization
 * **React Toastify** – Toast notifications
 * **localStorage** – Client-side data persistence
+* **Vitest** – Testing framework
+* **React Testing Library** – Component and user interaction testing
+* **userEvent** – Simulating realistic user interactions
+
+---
+
+## 🧪 Testing
+
+The application is tested using **Vitest**, **React Testing Library**, and **userEvent**.
+
+The tests cover:
+
+### `HomePage.test.jsx`
+
+* Rendering the initial UI.
+* Switching between English and Persian.
+* Adding expenses.
+* Editing expenses.
+* Deleting expenses.
+* Searching expenses by title.
+* Verifying expense data in `localStorage`.
+* Verifying that edited expenses are correctly saved to `localStorage`.
+* Verifying that deleted expenses are removed from `localStorage`.
+
+### `money.test.js`
+
+The `formatMoney()` utility is tested for:
+
+* Formatting zero values.
+* Formatting monetary values with cents.
+* Rounding monetary values.
+* Formatting large numbers.
+
+### Run Tests
+
+Run the test suite with:
+
+```bash
+npm test
+```
 
 ---
 
@@ -148,13 +188,15 @@ expense-tracker/
 │   ├── components/
 │   │   ├── HomePage.jsx
 │   │   ├── HomePage.css
+│   │   ├── HomePage.test.jsx
 │   │   ├── ExpenseItems.jsx
 │   │   ├── ExpenseItems.css
 │   │   ├── ExpenseChart.jsx
 │   │   └── ExpenseChart.css
 │   │
 │   ├── utils/
-│   │   └── money.js
+│   │   ├── money.js
+│   │   └── money.test.js
 │   │
 │   ├── App.jsx
 │   ├── App.css
