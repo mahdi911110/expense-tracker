@@ -112,6 +112,7 @@ export function HomePage() {
         <div className="middle-section">
           <input
             className="search-input"
+            data-testid="search-input"
             type="text"
             placeholder={isPersian ? 'سرچ' : 'Search'}
             onChange={saveSearch}
@@ -120,10 +121,10 @@ export function HomePage() {
           />
         </div>
         <div className="right-section">
-          <button className='btn-language' onClick={handleLanguage}>
+          <button className='btn-language' data-testid="btn-language" onClick={handleLanguage}>
             {isPersian ? 'En' : 'Fa'}
           </button>
-          <button className="btn-chart" onClick={showChart}>
+          <button className="btn-chart" data-testid="" onClick={showChart}>
             <img
               className="img-chart-pie"
               src="/chart-pie-2.svg"
@@ -136,7 +137,7 @@ export function HomePage() {
         <div className='chart-container'>
           <div className='chart'>
             <div className='chart-header'>
-              <h2 className='chart-header-text'>
+              <h2 className='chart-header-text' data-testid="chart-header-text">
                 {isPersian ? 'نمودار هزینه‌ها' : 'Expense Chart'}
               </h2>
             </div>
@@ -150,11 +151,11 @@ export function HomePage() {
         </div>
       )}
       <div className="inputs" style={{ direction: isPersian ? 'rtl' : 'ltr' }}>
-        <input value={inputText} onChange={onChangeText} className='input-text' type="text" placeholder={isPersian ? 'یک عنوان بنویسید' : "Type a title"} />
-        <input value={inputPrice} onChange={onChangePrice} className='input-price' type="text" placeholder={isPersian ? 'مبلغ را وارد کنید' : "Type price"} />
-        <input value={inputDate} onChange={onChangeDate} className='input-date' type="date" />
-        <input value={inputKeyWord} onChange={onChangeKeyWord} className='input-keyword' type="text" placeholder={isPersian ? 'یک یا چند کلیدواژه وارد کنید' : "Type keyword"} />
-        <button className="btn-add" onClick={addToList}>
+        <input value={inputText} onChange={onChangeText} data-testid="input-text" className='input-text' type="text" placeholder={isPersian ? 'یک عنوان بنویسید' : "Type a title"} />
+        <input value={inputPrice} onChange={onChangePrice} data-testid="input-price" className='input-price' type="text" placeholder={isPersian ? 'مبلغ را وارد کنید' : "Type price"} />
+        <input value={inputDate} onChange={onChangeDate} data-testid="input-date" className='input-date' type="date" />
+        <input value={inputKeyWord} onChange={onChangeKeyWord} data-testid="input-keyword" className='input-keyword' type="text" placeholder={isPersian ? 'یک یا چند کلیدواژه وارد کنید' : "Type keyword"} />
+        <button className="btn-add" data-testid="btn-add" onClick={addToList}>
           {isPersian? 'افزودن' : 'Add'}
         </button>
       </div>
@@ -176,55 +177,28 @@ export function HomePage() {
           </div>
         </div>
       :
-        <div className="expense-list">
+        <div className="expense-list" style={{ direction: isPersian ? 'rtl' : 'ltr' }}>
           <div className='expense-list-header'>
-            {isPersian ?
-              <>
-                <div className='expense-list-header-list-title'>
-                  فهرست هزینه‌ها
-                </div>
-                <div className='expense-list-header-detail'>
-                  <div className='expense-list-header-action-fa'>
-                    اقدامات
-                  </div>
-                  <div className='expense-list-header-keyword-fa'>
-                    کلیدواژه
-                  </div>
-                  <div className='expense-list-header-date-fa'>
-                    زمان
-                  </div>
-                  <div className='expense-list-header-price-fa'>
-                    مبالغ
-                  </div>
-                  <div className='expense-list-header-title-fa' style={{ justifyContent: 'end' }}>
-                    عنوان
-                  </div>
-                </div>
-              </> 
-            :
-              <>
-                <div className='expense-list-header-list-title'>
-                  Expense List
-                </div>
-                <div className='expense-list-header-detail'>
-                  <div className='expense-list-header-title'>
-                    Title
-                  </div>
-                  <div className='expense-list-header-price'>
-                    Prices
-                  </div>
-                  <div className='expense-list-header-date'>
-                    Date
-                  </div>
-                  <div className='expense-list-header-keyword'>
-                    Keyword
-                  </div>
-                  <div className='expense-list-header-action'>
-                    Actions
-                  </div>
-                </div>
-              </>
-            }
+            <div className='expense-list-header-list-title'>
+              {isPersian ? 'فهرست هزینه‌ها' : 'Expense List'}
+            </div>
+            <div className='expense-list-header-detail'>
+              <div className='expense-list-header-title'>
+                {isPersian ? 'عنوان' : 'Title'}
+              </div>
+              <div className='expense-list-header-price'>
+                {isPersian ? 'مبالغ' : 'Prices'}
+              </div>
+              <div className='expense-list-header-date'>
+                {isPersian ? 'زمان' : 'Date'}
+              </div>
+              <div className='expense-list-header-keyword'>
+                {isPersian ? 'کلیدواژه' : 'Keyword'}
+              </div>
+              <div className='expense-list-header-action'>
+                {isPersian ? 'اقدامات' : 'Actions'}
+              </div>
+            </div>
           </div>
           {filteredList.length > 0 ? filteredList.map(listItem => {
               return (
